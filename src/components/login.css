@@ -23,22 +23,23 @@ main{
 }
 
 form{
+    margin: auto;
     border-top-left-radius: 2rem ;
     border-top-right-radius: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    width: 100%;
+    width: 50%;
     margin-top: 2vh;
     height: 58vh;
 }
 .form-type{
     color: var(--color-primary);
-    width: 50%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: space-between;
+    justify-content: space-around;
+    align-items: space-around;
 
 }
 .form-type p:hover {
@@ -51,15 +52,20 @@ form{
 button{
     margin-top: 2rem;
     margin-bottom: 1rem;
-    width:80vw;
+    width:80%;
     background-color: var(--bgcolor);
     border: none;
     padding: .6rem 0;
     border-radius: .4rem;
 }
+button:hover{
+    background-color: var(--color-hover);
+    color: white;
+
+}
 .input-container{
-    margin: 2rem;
-    width: 80vw;
+    margin: 1rem 2rem;
+    width: 80%;
 }
 .input-container input{
     height: 2rem;
@@ -77,4 +83,10 @@ a.link{
     color: var(--color-primary-darker);
     border-bottom: 2px solid rgba(42, 33, 15, 0.7);
     font-weight: 700;
+}
+
+@media (max-width: 500px) {
+    form{
+        width: 100%;
+    }
 }
