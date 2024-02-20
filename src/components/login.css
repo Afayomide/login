@@ -1,0 +1,80 @@
+
+main{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+}
+.welcome{
+  margin-top: 40vh;
+  padding: 0 2rem;
+}
+.starsgif{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    z-index: -1;
+    background: url("../assets/stars-fall.gif") center center / cover;
+    background-repeat: no-repeat;
+    opacity: .3;
+}
+
+form{
+    border-top-left-radius: 2rem ;
+    border-top-right-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 2vh;
+    height: 58vh;
+}
+.form-type{
+    color: var(--color-primary);
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+
+}
+.form-type p:hover {
+    cursor: pointer;
+
+}
+.logo{
+    width: 10rem;
+}
+button{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width:80vw;
+    background-color: var(--bgcolor);
+    border: none;
+    padding: .6rem 0;
+    border-radius: .4rem;
+}
+.input-container{
+    margin: 2rem;
+    width: 80vw;
+}
+.input-container input{
+    height: 2rem;
+    width: 100%;
+    border: .2px solid var(--color-primary);
+    margin-top: .5rem;
+    border-radius: .4rem;
+}
+
+a.link{
+    text-decoration: none;
+    color: var(--color-primary)
+}
+.line{
+    color: var(--color-primary-darker);
+    border-bottom: 2px solid rgba(42, 33, 15, 0.7);
+    font-weight: 700;
+}
