@@ -2,12 +2,25 @@ import { useState,useEffect } from "react";
 import starsgif from "../assets/stars-fall.gif"
 import logo from "../assets/starlog.png"
 import "./login.css"
+import { BsEyeFill } from 'react-icons/bs';
+import { BsEyeSlashFill } from 'react-icons/bs';
 
 function Login () {
     const[formType, setFormType] = useState("Work")
+    const [password, setPassword] = useState('');
     const [profLine, setProfLine] = useState("line")
     const [clientLine, setClientLine] = useState("none")
     const [scrollPosition, setScrollPosition] = useState(0);
+    const [changePassword, setChangePassword] = useState(true);
+
+    function handlePassword() {
+        if(changePassword == true){
+          setChangePassword(false)
+        }
+       if(changePassword == false) {
+        setChangePassword(true)
+       }
+    }
 function clienTypeChanger() {
        setFormType("") 
        setClientLine("line")
@@ -54,8 +67,14 @@ function profTypeChanger() {
 
 <div className="input-container">
 <label for="password">Password:</label><br/>
-    <input placeholder="Enter Password" name="password" type="password"/>
+<div className="pwd-input-icons">    
+<input className="pwd-input-field" placeholder="Enter Password" name="password" type={changePassword ? "password" : "text"}/>
+    <div className='pwd-icons' onClick={handlePassword}> {changePassword ? <BsEyeFill className='eye'/> : <BsEyeSlashFill className='eye'/>}</div>
+
 </div>
+
+</div>
+
 <a className="link">forgot password?</a>
     <button> Login </button>
     <small>New User? <a className="link" href="/">Sign Up</a></small>
