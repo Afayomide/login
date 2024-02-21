@@ -47,10 +47,10 @@ function profTypeChanger() {
     return(
         <main className="login-container">
 <div className="starsgif" style={{ backgroundPositionY: -scrollPosition * 0.5 + 'px' }}/>
-{/* <img src={logo}  className="logo" alt="logo"/> */}
+<img src={logo}  className="logo" alt="logo"/>
 <section className="welcome">
-   <h3>You Are A Star,</h3>
-<h3>Welcome</h3> 
+   <h3>You Are A Star.</h3>
+<h3>Welcome,</h3> 
 </section>
 
 <form>

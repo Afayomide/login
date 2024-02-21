@@ -13,7 +13,6 @@ main{
 }
 .welcome{
   padding: 0 2rem;
-  padding-top: 15vh;
  color: var(--color-primary-darker)
 }
 .starsgif{
@@ -58,8 +57,10 @@ form{
     cursor: pointer;
 
 }
-.logo{
-    width: 10rem;
+.logo{  
+    padding-top: 8vh;
+    height: 9vh;
+    width: 8rem;
 }
 button{
     margin-top: 2rem;
@@ -77,7 +78,7 @@ button:hover{
 }
 .input-container{
     margin: 1rem 2rem;
-    width: 50%;
+    width: 70%;
 }
 .input-container input{
     height: 2rem;
@@ -107,7 +108,7 @@ a.link{
     position: absolute;
     box-sizing:border-box;
     top:50%;
-    left: 85%;
+    left: 90%;
     transform: translateY(-50%);
 }
  
@@ -124,19 +125,15 @@ a.link{
 .pwd-input-field {
     z-index: -1;
     width: 100%;
-    text-align: center;
 }
-@media (max-width: 1500px) {
 
-    
-}
 
 @media (max-width: 700px) {
     form{
         width: 100%;
     }
-    .welcome{
-        padding-top: 35vh;
+    .logo{
+        padding-top: 27vh;
     }
     main{
         padding-bottom: 0;
@@ -147,7 +144,15 @@ a.link{
     .welcome h3:nth-last-of-type(1){
         font-size: 1.5rem;
     }
+    .pwd-icons {
+        left: 80%
+    }
     
+}@media(max-width:350px){
+    .logo{
+        padding-top: 25vh;
+    }
+
 }
 
 @media (max-height: 800px) {
